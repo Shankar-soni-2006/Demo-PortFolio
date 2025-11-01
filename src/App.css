@@ -1,0 +1,277 @@
+/* App.css - Basic styles for the portfolio application */
+
+:root {
+  --bg-primary: #000000;
+  --text-primary: #ffffff;
+  --card-bg: rgba(0, 0, 0, 0.8);
+  --border-color: rgba(0, 255, 255, 0.5);
+  --shadow-color: rgba(0, 255, 255, 0.3);
+  --accent-primary: #00ffff;
+  --accent-secondary: #ff00ff;
+}
+
+[data-theme="light"] {
+  --bg-primary: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e2e8f0 100%);
+  --text-primary: #2d3748;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --border-color: rgba(66, 153, 225, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --accent-primary: #3182ce;
+  --accent-secondary: #805ad5;
+}
+
+.App {
+  text-align: left;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .card {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 8px 32px var(--shadow-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .tech-tag {
+  background: rgba(0, 123, 181, 0.1) !important;
+  color: var(--accent-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="light"] .skill-card {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 4px 16px var(--shadow-color) !important;
+}
+
+[data-theme="light"] .cert-item {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 4px 16px var(--shadow-color) !important;
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4 {
+  background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+[data-theme="light"] .card {
+  background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%) !important;
+  border: 2px solid rgba(66, 153, 225, 0.2) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08), 0 3px 10px rgba(66, 153, 225, 0.1) !important;
+  color: #2d3748 !important;
+}
+
+[data-theme="light"] .card h3 {
+  color: #3182ce !important;
+  text-shadow: none !important;
+}
+
+[data-theme="light"] .card p {
+  color: #4a5568 !important;
+}
+
+[data-theme="light"] p {
+  color: #2d3748 !important;
+}
+
+[data-theme="light"] .tech-tag {
+  background: rgba(66, 153, 225, 0.1) !important;
+  color: #3182ce !important;
+  border: 1px solid rgba(66, 153, 225, 0.25) !important;
+  text-shadow: none !important;
+}
+
+[data-theme="light"] .card button {
+  background: linear-gradient(45deg, #3182ce, #805ad5) !important;
+  border: 2px solid #3182ce !important;
+  color: white !important;
+  text-shadow: none !important;
+}
+
+[data-theme="light"] .card-back {
+  background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%) !important;
+  color: #2d3748 !important;
+}
+
+[data-theme="light"] .card-back h4 {
+  color: #805ad5 !important;
+  text-shadow: none !important;
+}
+
+[data-theme="light"] .card-back span {
+  color: #4a5568 !important;
+}
+
+[data-theme="light"] .card-back div {
+  color: #4a5568 !important;
+  border-color: rgba(128, 90, 213, 0.3) !important;
+  background: rgba(128, 90, 213, 0.05) !important;
+}
+
+[data-theme="light"] .card-back .project-links button {
+  background: linear-gradient(45deg, #3182ce, #805ad5) !important;
+  border: 2px solid #3182ce !important;
+  color: white !important;
+  text-shadow: none !important;
+}
+
+[data-theme="light"] button {
+  background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary)) !important;
+  color: white !important;
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .about-description {
+  color: #2d3748 !important;
+}
+
+[data-theme="light"] .dynamic-description {
+  color: #1a202c !important;
+}
+
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 1rem 2rem !important;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(10, 10, 30, 0.15), rgba(0, 0, 0, 0.1)) !important;
+  backdrop-filter: blur(30px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 2px solid !important;
+  border-image: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.3), rgba(255, 0, 255, 0.3), transparent) 1 !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden !important;
+}
+
+.navbar::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1), transparent) !important;
+  animation: shimmer 3s ease-in-out infinite !important;
+}
+
+.navbar::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(255, 0, 255, 0.05) 0%, transparent 50%) !important;
+  pointer-events: none !important;
+}
+
+[data-theme="light"] .navbar {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(248, 250, 252, 0.15), rgba(255, 255, 255, 0.1)) !important;
+  border-image: linear-gradient(90deg, transparent, rgba(49, 130, 206, 0.3), rgba(128, 90, 213, 0.3), transparent) 1 !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+[data-theme="light"] .navbar::before {
+  background: linear-gradient(90deg, transparent, rgba(49, 130, 206, 0.1), rgba(128, 90, 213, 0.1), transparent) !important;
+}
+
+[data-theme="light"] .navbar::after {
+  background: radial-gradient(circle at 20% 50%, rgba(49, 130, 206, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(128, 90, 213, 0.05) 0%, transparent 50%) !important;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #ffff00, #00ffff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  width: 60px;
+  height: 30px;
+  background: linear-gradient(45deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2));
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  border-color: rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.toggle-slider {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-slider.light {
+  left: 1px;
+  background: linear-gradient(45deg, #ffff00, #ff8800);
+}
+
+.toggle-slider.dark {
+  left: 31px;
+  background: linear-gradient(45deg, #4a00ff, #8800ff);
+}
+
+.toggle-icon {
+  font-size: 12px;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+
+/* Additional styles can be added here as needed */
