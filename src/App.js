@@ -860,6 +860,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
+                className="about-description"
                 style={{ 
                   fontSize: '1.2rem', 
                   lineHeight: '1.8', 
@@ -868,13 +869,14 @@ function App() {
                   marginBottom: '2rem'
                 }}
               >
-Computer Science student passionate about artificial intelligence, machine learning, and software development. Currently expanding my skills in full-stack development, cloud technologies, and modern frameworks like React, Node.js, and Python. Eager to apply my knowledge through hands-on projects and contribute to innovative solutions in the tech industry.
+Computer Science student passionate about AI/ML and full-stack development. Building innovative projects with React, Node.js, and Python. Ready to contribute to the tech industry with creative solutions.
               </motion.p>
               
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
+                className="about-buttons"
                 style={{ 
                   display: 'flex', 
                   justifyContent: 'center', 
@@ -1568,6 +1570,7 @@ Computer Science student passionate about artificial intelligence, machine learn
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
+                className="contact-form-heading"
                 style={{ 
                   color: '#00ffff', 
                   marginBottom: '2rem', 
@@ -1577,7 +1580,7 @@ Computer Science student passionate about artificial intelligence, machine learn
                   letterSpacing: '2px'
                 }}
               >
-                💬 SEND MESSAGE
+                <span className="cloud-emoji">💬 </span>SEND MESSAGE
               </motion.h3>
               
               <form 
@@ -1714,7 +1717,7 @@ Computer Science student passionate about artificial intelligence, machine learn
                     textShadow: '0 0 10px rgba(0, 0, 0, 0.5)'
                   }}
                 >
-                  🚀 SEND MESSAGE
+                  📤 SEND
                 </motion.button>
                 
                 {formResult && (
