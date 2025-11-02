@@ -36,7 +36,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
           borderBottom: '2px solid rgba(0, 255, 255, 0.3)'
         }}
       >
-        <div className="nav-brand" style={{ fontSize: '1.5rem', fontWeight: 'bold', background: 'linear-gradient(45deg, #00ffff, #ff00ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Shankar Soni</div>
+        <div className="nav-brand" style={{ fontSize: '1.5rem', fontWeight: '900', background: 'linear-gradient(45deg, #00ffff, #ff00ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textShadow: '0 0 10px rgba(0, 255, 255, 0.3)' }}>Shankar Soni</div>
         
         {/* Desktop Links */}
         <div className="nav-links-desktop" style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
@@ -60,13 +60,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
             className="mobile-menu-btn"
             onClick={handleMenuToggle}
             style={{
-              display: 'none',
-              flexDirection: 'column',
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              padding: '0.5rem',
-              gap: '4px'
+              display: 'none'
             }}
           >
             <span style={{ width: '25px', height: '3px', background: 'linear-gradient(45deg, #00ffff, #ff00ff)', display: 'block', transition: 'all 0.3s', transform: isOpen ? 'rotate(45deg) translate(6px, 6px)' : 'none' }}></span>

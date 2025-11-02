@@ -276,6 +276,23 @@ body {
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  /* Global mobile adjustments */
+  .App {
+    padding: 1rem !important;
+  }
+  
+  /* Section spacing */
+  .section {
+    margin-bottom: 2rem !important;
+  }
+  
+  /* Section headings */
+  .section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+    text-align: center !important;
+  }
+  
   /* About Me Section Mobile Styles */
   #about {
     padding: 6rem 1rem 2rem 1rem !important;
@@ -379,9 +396,239 @@ body {
     height: 15px !important;
     transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-80px) !important;
   }
+  
+  /* Skills Section Mobile */
+  #skills {
+    padding: 2rem 1rem !important;
+  }
+  
+  #skills h2 {
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .skills-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  
+  .skills-category {
+    width: 100% !important;
+  }
+  
+  .category-title {
+    font-size: 1.3rem !important;
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+    color: var(--accent-primary) !important;
+  }
+  
+  .skills-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  .skill-card {
+    padding: 1rem !important;
+    background: var(--card-bg) !important;
+    border: 2px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 16px var(--shadow-color) !important;
+  }
+  
+  .skill-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .skill-header h3 {
+    font-size: 1rem !important;
+    margin: 0 !important;
+    color: var(--text-primary) !important;
+  }
+  
+  .skill-progress {
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem !important;
+  }
+  
+  .progress-bar {
+    flex: 1 !important;
+    height: 8px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+  }
+  
+  .progress-fill {
+    height: 100% !important;
+    background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary)) !important;
+    border-radius: 4px !important;
+    transition: width 1s ease !important;
+  }
+  
+  .skill-percentage {
+    font-size: 0.9rem !important;
+    font-weight: bold !important;
+    color: var(--accent-primary) !important;
+    min-width: 40px !important;
+  }
+  
+  /* Projects Section Mobile */
+  #projects {
+    padding: 2rem 1rem !important;
+  }
+  
+  #projects h2 {
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  #projects > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+  }
+  
+  .card {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    min-height: 350px !important;
+    margin: 0 auto !important;
+  }
+  
+  .card-front,
+  .card-back {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .card p {
+    font-size: 0.9rem !important;
+  }
+  
+  .project-links {
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+  }
+  
+  .project-links button {
+    width: 100% !important;
+    padding: 0.8rem 1rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  /* Certifications Section Mobile */
+  #certifications {
+    padding: 2rem 1rem !important;
+  }
+  
+  #certifications h2 {
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  #certifications > div > div {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    padding: 0 !important;
+  }
+  
+  .cert-item {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  /* Experience Section Mobile */
+  #experience {
+    padding: 2rem 1rem !important;
+  }
+  
+  #experience h2 {
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  #experience h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  #experience .card {
+    margin-bottom: 1.5rem !important;
+    padding: 1.5rem !important;
+  }
+  
+  #experience .card h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  #experience .card h4 {
+    font-size: 1rem !important;
+  }
+  
+  #experience .card > div:first-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+  }
+  
+  #experience .card > div:first-child > span {
+    align-self: flex-start !important;
+  }
+  
+  .tech-tag {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.6rem !important;
+  }
+  
+  /* Tech Events Grid Mobile */
+  #experience > div > div:last-child {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Footer Mobile */
+  footer {
+    padding: 2rem 1rem !important;
+    margin-top: 2rem !important;
+  }
+  
+  footer h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  footer h3 {
+    font-size: 1.4rem !important;
+  }
+  
+  footer p {
+    font-size: 1rem !important;
+    padding: 0 0.5rem !important;
+  }
+  
+  footer > div > div:last-child {
+    padding: 0.8rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
 }
 
 @media (max-width: 480px) {
+  /* Global adjustments for very small screens */
+  .App {
+    padding: 0.5rem !important;
+  }
+  
+  /* About section */
   #about {
     padding: 5rem 0.5rem 2rem 0.5rem !important;
   }
@@ -411,6 +658,53 @@ body {
   #about .card {
     margin: 0 0.5rem !important;
     padding: 1rem !important;
+  }
+  
+  /* Skills section */
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .skill-card {
+    padding: 1rem !important;
+  }
+  
+  .skill-header h3 {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Projects section */
+  .card {
+    max-width: 280px !important;
+    min-height: 320px !important;
+  }
+  
+  .card-front,
+  .card-back {
+    padding: 1.5rem 1rem !important;
+  }
+  
+  /* Certifications */
+  #certifications > div > div {
+    padding: 0 0.5rem !important;
+  }
+  
+  /* Experience */
+  #experience .card {
+    padding: 1rem !important;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 1.5rem 0.5rem !important;
+  }
+  
+  footer h2 {
+    font-size: 1.6rem !important;
+  }
+  
+  footer h3 {
+    font-size: 1.2rem !important;
   }
 }
 
@@ -445,28 +739,38 @@ body {
   
   /* Contact Form */
   #contact .card {
-    margin: 0 !important;
-    padding: 2rem 1.5rem !important;
+    margin: 0 0.5rem !important;
+    padding: 1.5rem 1rem !important;
+    width: calc(100% - 1rem) !important;
+    box-sizing: border-box !important;
+    max-width: 600px !important;
   }
   
   #contact .card h3 {
-    font-size: 1.3rem !important;
-    margin-bottom: 1.5rem !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 1.2rem !important;
+    text-align: center !important;
   }
   
   #contact .card form {
-    gap: 1.2rem !important;
+    gap: 1rem !important;
+    width: 100% !important;
   }
   
   #contact .card input,
   #contact .card textarea {
-    padding: 1rem !important;
+    padding: 0.8rem !important;
     font-size: 0.9rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
   }
   
   #contact .card button {
-    padding: 1rem 1.5rem !important;
-    font-size: 1rem !important;
+    padding: 0.9rem 1.2rem !important;
+    font-size: 0.9rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
   
   /* Social Media Links */
@@ -512,16 +816,17 @@ body {
   }
   
   #contact .card {
-    padding: 1.5rem 1rem !important;
+    padding: 1rem 0.8rem !important;
+    margin: 0 !important;
   }
   
   #contact .card h3 {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
   }
   
   #contact .card input,
   #contact .card textarea {
-    padding: 0.9rem !important;
+    padding: 0.7rem !important;
     font-size: 0.85rem !important;
   }
   
@@ -552,6 +857,23 @@ body {
   
   .mobile-menu-btn {
     display: flex !important;
+    flex-direction: column !important;
+    background: rgba(0, 255, 255, 0.1) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 0.5rem !important;
+    width: 40px !important;
+    height: 40px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 4px !important;
+    cursor: pointer !important;
+    z-index: 1001 !important;
+  }
+  
+  /* Fix mobile viewport */
+  .App {
+    overflow-x: hidden !important;
   }
 }
 
@@ -609,12 +931,16 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem 1.5rem !important;
+    padding: 0.8rem 1rem !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     z-index: 1000 !important;
+  }
+  
+  .nav-brand {
+    font-size: 1.2rem !important;
   }
   
   .nav-links {
@@ -700,6 +1026,133 @@ body {
   .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px) !important;
   }
+  
+  /* Ensure mobile menu button is always visible on mobile */
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+  
+  /* Hide desktop navigation on mobile */
+  .nav-links-desktop {
+    display: none !important;
+  }
+}
+
+/* Skills Section Styles */
+.skills-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-category {
+  flex: 1;
+  min-width: 300px;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--accent-primary);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px var(--shadow-color);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-header > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.skill-header h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.skill-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  outline: none;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 5px;
+  transition: width 1s ease;
+  position: relative;
+  border: none;
+  outline: none;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+  border: none;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.skill-percentage {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--accent-primary);
+  min-width: 45px;
+  text-align: right;
 }
 
 /* Additional styles can be added here as needed */

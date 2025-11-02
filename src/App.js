@@ -11,22 +11,24 @@ const PROGRAMMING_LANGUAGES = [
   { name: 'JavaScript', level: 80, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="32" height="32" alt="JavaScript" /> },
   { name: 'Python', level: 75, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="32" height="32" alt="Python" /> },
   { name: 'Java', level: 65, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="32" height="32" alt="Java" /> },
-  { name: 'C', level: 80, logo: <div style={{width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#00599C', color: 'white', fontWeight: 'bold', fontSize: '18px', clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)'}}>C</div> },
+  { name: 'C', level: 80, logo: <div style={{ width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#00599C', color: 'white', fontWeight: 'bold', fontSize: '18px', clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' }}>C</div> },
   { name: 'C++', level: 75, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="32" height="32" alt="C++" /> },
-   
+
 ];
 
 const getToolsFrameworks = (darkMode) => [
+  { name: 'React', level: 45, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="32" height="32" alt="React" /> },
   { name: 'Git', level: 60, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="32" height="32" alt="Git" /> },
   { name: 'Vercel', level: 90, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" width="32" height="32" alt="Vercel" /> },
   { name: 'Netlify', level: 90, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" width="32" height="32" alt="Netlify" /> },
   { name: 'AWS', level: 55, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" width="32" height="32" alt="AWS" /> },
   { name: 'MongoDB', level: 80, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="32" height="32" alt="MongoDB" /> },
-  { name: 'Express.js', level: 75, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="32" height="32" alt="Express.js" style={{filter: darkMode ? 'brightness(2) invert(1)' : 'brightness(0) invert(0)'}} /> },
+  { name: 'Express.js', level: 75, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="32" height="32" alt="Express.js" style={{ filter: darkMode ? 'brightness(2) invert(1)' : 'brightness(0) invert(0)' }} /> },
   { name: 'Node.js', level: 65, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="32" height="32" alt="Node.js" /> },
-  { name: 'Github', level: 80, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="32" height="32" alt="Github" style={{filter: darkMode ? 'brightness(2) invert(1)' : 'brightness(0) invert(0)'}} /> },
+  { name: 'Github', level: 80, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="32" height="32" alt="Github" style={{ filter: darkMode ? 'brightness(2) invert(1)' : 'brightness(0) invert(0)' }} /> },
   { name: 'Tailwind CSS', level: 85, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="32" height="32" alt="Tailwind CSS" /> },
   { name: 'SASS', level: 80, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="32" height="32" alt="SASS" /> },
+  { name: 'Firebase', level: 60, logo: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" width="32" height="32" alt="Firebase" /> },
 ];
 
 const CERT_IMAGES = {
@@ -37,10 +39,10 @@ const CERT_IMAGES = {
   'AWS Cloud Practitioner': '/assets/certificates/aws-cloud-practitioner.png',
   'Introduction to Generative AI ': '/assets/certificates/GGen.png',
   'Introduction to LLMs': '/assets/certificates/LLM.png',
-  'Vadodara Hackathon 6.0': '/assets/certificates/VH6.O.png',
-  'HTML and CSS': '/assets/certificates/HTMLCSS.jpg',
+  'Vadodara Hackathon 6.0': '/assets/certificates/VH6.0.png',
+  'HTML and CSS': '/assets/certificates/HTML-and-CSS.jpg',
   'Javascript': '/assets/certificates/js.jpg',
-  'Python Basics': '/assets/certificates/python.png'
+  'Python': '/assets/certificates/Python-Basics.png'
 };
 
 
@@ -48,7 +50,7 @@ const PROJECTS = [
   {
     title: 'FlashCard Generator',
     description: 'AI-powered flashcard application with spaced repetition',
-    technologies: ['React', 'Vite', 'JS','Gemini API'],
+    technologies: ['React', 'Vite', 'JS', 'Gemini API'],
     features: ['AI-powered card generation', 'Spaced repetition algorithm', 'Progress tracking'],
     status: 'LIVE',
     github: 'https://github.com/Shankar-soni-2006/FlashCard-Generator',
@@ -81,7 +83,7 @@ const PROJECTS = [
     github: 'https://github.com/Shankar-soni-2006',
     demo: 'https://demo.com'
   },
-  
+
   {
     title: 'E-Commerce Platform',
     description: 'Full-featured online shopping platform',
@@ -115,19 +117,19 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
   <motion.div
     className="card"
     onClick={onFlip}
-    whileHover={{ 
-      scale: 1.05, 
+    whileHover={{
+      scale: 1.05,
       boxShadow: '0 20px 40px rgba(0, 255, 255, 0.4), 0 0 60px rgba(255, 0, 255, 0.2)',
       rotateY: 2
     }}
     style={{
-      width: '280px',
+      width: 'min(280px, 90vw)',
       height: '380px',
-      background: isFlipped 
-        ? 'linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(20, 20, 60, 0.95))' 
+      background: isFlipped
+        ? 'linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(20, 20, 60, 0.95))'
         : 'linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(10, 10, 30, 0.9))',
-      border: isFlipped 
-        ? '2px solid rgba(255, 0, 255, 0.6)' 
+      border: isFlipped
+        ? '2px solid rgba(255, 0, 255, 0.6)'
         : '2px solid rgba(0, 255, 255, 0.5)',
       borderRadius: '16px',
       backdropFilter: 'blur(15px)',
@@ -136,8 +138,8 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
       padding: '0',
       position: 'relative',
       overflow: 'hidden',
-      boxShadow: isFlipped 
-        ? '0 8px 32px rgba(255, 0, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)' 
+      boxShadow: isFlipped
+        ? '0 8px 32px rgba(255, 0, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
         : '0 8px 32px rgba(0, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
     }}
   >
@@ -199,15 +201,15 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
       transition={{ duration: 2, repeat: Infinity, delay: 1.5 }}
     />
     {!isFlipped ? (
-      <div className="card-front" style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '3rem 1.5rem 2rem 1.5rem' }}>
+      <div className="card-front" style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '2.5rem 1.5rem 2rem 1.5rem' }}>
         {/* Status indicator */}
         <motion.div
           style={{
             position: 'absolute',
             top: '15px',
             right: '15px',
-            background: project.status === 'LIVE' 
-              ? 'linear-gradient(45deg, #00ff00, #00ffff)' 
+            background: project.status === 'LIVE'
+              ? 'linear-gradient(45deg, #00ff00, #00ffff)'
               : 'linear-gradient(45deg, #ffaa00, #ff6600)',
             color: '#000',
             padding: '0.3rem 0.6rem',
@@ -215,11 +217,11 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
             fontSize: '0.7rem',
             fontWeight: 'bold',
             zIndex: 10,
-            boxShadow: project.status === 'LIVE' 
-              ? '0 0 10px rgba(0, 255, 0, 0.5)' 
+            boxShadow: project.status === 'LIVE'
+              ? '0 0 10px rgba(0, 255, 0, 0.5)'
               : '0 0 10px rgba(255, 170, 0, 0.5)'
           }}
-          animate={{ 
+          animate={{
             boxShadow: project.status === 'LIVE' ? [
               '0 0 10px rgba(0, 255, 0, 0.5)',
               '0 0 20px rgba(0, 255, 255, 0.8)',
@@ -234,35 +236,36 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
         >
           {project.status === 'LIVE' ? '🟢' : '🟡'} {project.status}
         </motion.div>
-        
+
         {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
-          <h3 style={{ 
-            margin: '0 0 1rem 0', 
-            fontSize: '1.3rem', 
-            color: '#00ffff', 
+        <div style={{ textAlign: 'center', marginBottom: '1rem', marginTop: '1rem' }}>
+          <h3 style={{
+            margin: '0 0 1rem 0',
+            fontSize: '1.2rem',
+            color: '#00ffff',
             fontWeight: 'bold',
             textShadow: '0 0 10px rgba(0, 255, 255, 0.5)',
-            letterSpacing: '1px'
+            letterSpacing: '1px',
+            lineHeight: '1.3'
           }}>{project.title}</h3>
         </div>
-        
+
         {/* Description */}
         <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
-          <p style={{ 
-            margin: '0', 
-            fontSize: '0.9rem', 
-            color: 'rgba(255, 255, 255, 0.8)', 
+          <p style={{
+            margin: '0',
+            fontSize: '0.9rem',
+            color: 'rgba(255, 255, 255, 0.8)',
             lineHeight: '1.6',
             textAlign: 'center'
           }}>{project.description}</p>
         </div>
-        
+
         {/* Action buttons */}
         <div className="project-links" style={{ display: 'flex', gap: '0.8rem', justifyContent: 'center', marginTop: '1rem' }}>
-          <motion.button 
-            whileHover={{ 
-              scale: 1.1, 
+          <motion.button
+            whileHover={{
+              scale: 1.1,
               boxShadow: '0 0 20px rgba(0, 255, 255, 0.6)',
               y: -2
             }}
@@ -288,9 +291,9 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
               textShadow: '0 0 5px rgba(0, 255, 255, 0.5)',
               transition: 'all 0.3s ease'
             }}>⚡ Code</motion.button>
-          <motion.button 
-            whileHover={{ 
-              scale: 1.1, 
+          <motion.button
+            whileHover={{
+              scale: 1.1,
               boxShadow: '0 0 20px rgba(255, 0, 255, 0.6)',
               y: -2
             }}
@@ -317,7 +320,7 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
               transition: 'all 0.3s ease'
             }}>🚀 Live Demo</motion.button>
         </div>
-        
+
         {/* Click indicator */}
         <motion.div
           style={{
@@ -337,15 +340,15 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
       <div className="card-back" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%', padding: '2rem 1.5rem' }}>
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-          <h4 style={{ 
-            color: '#ff00ff', 
-            marginBottom: '0', 
+          <h4 style={{
+            color: '#ff00ff',
+            marginBottom: '0',
             fontSize: '1.2rem',
             textShadow: '0 0 10px rgba(255, 0, 255, 0.5)',
             letterSpacing: '1px'
           }}>KEY FEATURES</h4>
         </div>
-        
+
         {/* Features */}
         <div style={{ flex: 1, marginBottom: '1.5rem' }}>
           {project.features.map((feature, idx) => (
@@ -354,8 +357,8 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: idx * 0.2 }}
-              whileHover={{ 
-                scale: 1.05, 
+              whileHover={{
+                scale: 1.05,
                 x: 10,
                 backgroundColor: 'rgba(255, 0, 255, 0.1)'
               }}
@@ -371,29 +374,29 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
                 transition: 'all 0.3s ease'
               }}
             >
-              <motion.span 
-                style={{ 
-                  color: '#ff00ff', 
+              <motion.span
+                style={{
+                  color: '#ff00ff',
                   marginRight: '0.8rem',
                   fontSize: '1rem'
                 }}
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity, delay: idx * 0.3 }}
               >◆</motion.span>
-              <span style={{ 
-                color: 'rgba(255, 255, 255, 0.9)', 
+              <span style={{
+                color: 'rgba(255, 255, 255, 0.9)',
                 fontSize: '0.85rem',
                 fontWeight: '500'
               }}>{feature}</span>
             </motion.div>
           ))}
         </div>
-        
+
         {/* Action buttons */}
         <div className="project-links" style={{ display: 'flex', gap: '0.8rem', justifyContent: 'center' }}>
-          <motion.button 
-            whileHover={{ 
-              scale: 1.1, 
+          <motion.button
+            whileHover={{
+              scale: 1.1,
               boxShadow: '0 0 20px rgba(0, 255, 255, 0.6)',
               y: -2
             }}
@@ -419,9 +422,9 @@ const ProjectCard = ({ project, index, isFlipped, onFlip }) => (
               textShadow: '0 0 5px rgba(0, 255, 255, 0.5)',
               transition: 'all 0.3s ease'
             }}>⚡ Code</motion.button>
-          <motion.button 
-            whileHover={{ 
-              scale: 1.1, 
+          <motion.button
+            whileHover={{
+              scale: 1.1,
               boxShadow: '0 0 20px rgba(255, 0, 255, 0.6)',
               y: -2
             }}
@@ -482,7 +485,7 @@ function App() {
   const openCertificate = (certName) => {
     setSelectedCertificate({
       name: certName,
-      image: CERT_IMAGES[certName] || 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop'
+      image: CERT_IMAGES[certName]
     });
   };
 
@@ -504,7 +507,7 @@ function App() {
     let slideInterval;
     if (selectedEvent !== null) {
       slideInterval = setInterval(() => {
-        setCurrentImageIndex((prev) => 
+        setCurrentImageIndex((prev) =>
           prev === techEvents[selectedEvent].images.length - 1 ? 0 : prev + 1
         );
       }, 4000);
@@ -513,9 +516,9 @@ function App() {
   }, [selectedEvent]);
 
   const techEvents = [
-    { 
-      name: 'Devfest Baroda', 
-      date: 'December 2024', 
+    {
+      name: 'Devfest Baroda',
+      date: 'December 2024',
       images: [
         '/assets/DevFest Baroda 2024/DFB1.jpg',
         '/assets/DevFest Baroda 2024/DFB2.jpg',
@@ -524,9 +527,9 @@ function App() {
         '/assets/DevFest Baroda 2024/DFB5.jpg'
       ]
     },
-    { 
-      name: 'AWS Community Day Ahmedabad', 
-      date: 'June 2025', 
+    {
+      name: 'AWS Community Day Ahmedabad',
+      date: 'June 2025',
       images: [
         '/assets/AWS Community Day ADI/ACDA1.jpg',
         '/assets/AWS Community Day ADI/ACDA2.jpg',
@@ -536,9 +539,9 @@ function App() {
         '/assets/AWS Community Day ADI/ACDA6.jpg'
       ]
     },
-    { 
-      name: 'Cloud Community Day Gandhinagar', 
-      date: 'July 2025', 
+    {
+      name: 'Cloud Community Day Gandhinagar',
+      date: 'July 2025',
       images: [
         '/assets/Cloud Community Day Gandhinagar/CCDG1.jpg',
         '/assets/Cloud Community Day Gandhinagar/CCDG2.jpg',
@@ -546,9 +549,9 @@ function App() {
         '/assets/Cloud Community Day Gandhinagar/CCDG4.jpg'
       ]
     },
-    { 
-      name: 'DevFest Baroda 2025', 
-      date: 'October 2025', 
+    {
+      name: 'DevFest Baroda 2025',
+      date: 'October 2025',
       images: [
         '/assets/Devfest Baroda 2025/DevBRC251.png',
         '/assets/Devfest Baroda 2025/DevBRC252.png',
@@ -559,9 +562,9 @@ function App() {
         '/assets/Devfest Baroda 2025/DevBRC257.png'
       ]
     },
-    { 
-      name: 'AWS Community Vadodara', 
-      date: 'October 2025', 
+    {
+      name: 'AWS Community Vadodara',
+      date: 'October 2025',
       images: [
         '/assets/AWS Community Day BRC/ACDBRC1.jpg',
         '/assets/AWS Community Day BRC/ACDBRC2.jpg',
@@ -582,9 +585,9 @@ function App() {
         '/assets/AWS Community Day BRC/ACDBRC17.jpg',
       ]
     },
-    { 
-      name: 'Next.js  Conference 2025', 
-      date: 'October 2025', 
+    {
+      name: 'Next.js  Conference 2025',
+      date: 'October 2025',
       images: [
         '/assets/Next.js Conf 2025/NextJSConf1.png',
         '/assets/Next.js Conf 2025/NextJSConf2.png',
@@ -608,15 +611,15 @@ function App() {
     <div className="App" data-theme={darkMode ? 'dark' : 'light'} style={{ padding: '2rem', minHeight: '100vh', position: 'relative' }}>
       <ThreeBackground darkMode={darkMode} />
       <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
-      
+
       <section id="about" className="section" style={{ marginBottom: '4rem', position: 'relative', overflow: 'hidden', paddingTop: '8rem' }}>
-        
+
         <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem', position: 'relative', zIndex: 1 }}>
           {/* Profile Section */}
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <motion.div 
-              className="hero-image" 
-              style={{ 
+            <motion.div
+              className="hero-image"
+              style={{
                 marginBottom: '2rem',
                 position: 'relative',
                 display: 'inline-block'
@@ -652,7 +655,7 @@ function App() {
                   }}
                 />
               ))}
-              
+
               {/* Tech frame */}
               <motion.div
                 style={{
@@ -676,7 +679,7 @@ function App() {
                   background: 'rgba(0, 0, 0, 0.9)'
                 }} />
               </motion.div>
-              
+
               {/* Pulse ring */}
               <motion.div
                 style={{
@@ -696,7 +699,7 @@ function App() {
                 }}
                 transition={{ duration: 2, repeat: Infinity }}
               />
-              
+
               {/* Corner accents */}
               {[0, 90, 180, 270].map((angle, i) => (
                 <motion.div
@@ -722,10 +725,10 @@ function App() {
                   }}
                 />
               ))}
-              
-              <motion.img 
-                src="/assets/MyImage.png" 
-                alt="Profile" 
+
+              <motion.img
+                src="/assets/MyImage.png"
+                alt="Profile"
                 style={{
                   width: '180px',
                   height: '180px',
@@ -754,7 +757,7 @@ function App() {
                 }}
               />
             </motion.div>
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -783,16 +786,16 @@ function App() {
                 </motion.span>
                 <span> DEVELOPER</span>
               </div>
-              <motion.p 
+              <motion.p
                 key={`role-desc-${currentRole}`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="dynamic-description"
-                style={{ 
-                  fontSize: '1.1rem', 
-                  lineHeight: '1.6', 
-                  color: darkMode ? 'rgba(255, 255, 255, 0.8)' : '#1a202c', 
+                style={{
+                  fontSize: '1.1rem',
+                  lineHeight: '1.6',
+                  color: darkMode ? 'rgba(255, 255, 255, 0.8)' : '#1a202c',
                   textAlign: 'center',
                   maxWidth: '600px',
                   margin: '0 auto'
@@ -802,15 +805,15 @@ function App() {
               </motion.p>
             </div>
           </div>
-          
-          <motion.h2 
+
+          <motion.h2
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            style={{ 
-              textAlign: 'center', 
-              marginBottom: '3rem', 
-              fontSize: '2.5rem', 
+            style={{
+              textAlign: 'center',
+              marginBottom: '3rem',
+              fontSize: '2.5rem',
               color: 'var(--text-primary)',
               textShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
               background: 'linear-gradient(45deg, #00ffff, #ff00ff)',
@@ -820,14 +823,14 @@ function App() {
           >
             ABOUT ME
           </motion.h2>
-          
-          <motion.div 
-            className="card" 
+
+          <motion.div
+            className="card"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            whileHover={{ 
-              scale: 1.02, 
+            whileHover={{
+              scale: 1.02,
               boxShadow: '0 20px 40px rgba(0, 255, 255, 0.4), inset 0 0 20px rgba(255, 0, 255, 0.1)',
               border: '1px solid rgba(0, 255, 255, 0.3)'
             }}
@@ -854,39 +857,39 @@ function App() {
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
             />
-            
+
             <div style={{ padding: '2rem', position: 'relative', zIndex: 1 }}>
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="about-description"
-                style={{ 
-                  fontSize: '1.2rem', 
-                  lineHeight: '1.8', 
-                  color: darkMode ? '#ffffff' : '#1a202c', 
+                style={{
+                  fontSize: '1.2rem',
+                  lineHeight: '1.8',
+                  color: darkMode ? '#ffffff' : '#1a202c',
                   textAlign: 'center',
                   marginBottom: '2rem'
                 }}
               >
-Computer Science student passionate about AI/ML and full-stack development. Building innovative projects with React, Node.js, and Python. Ready to contribute to the tech industry with creative solutions.
+                Computer Science student passionate about AI/ML and full-stack development. Building innovative projects with React, Node.js, and Python. Ready to contribute to the tech industry with creative solutions.
               </motion.p>
-              
+
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
                 className="about-buttons"
-                style={{ 
-                  display: 'flex', 
-                  justifyContent: 'center', 
-                  marginTop: '2rem', 
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  marginTop: '2rem',
                   gap: '2rem'
                 }}
               >
                 <motion.button
-                  whileHover={{ 
-                    scale: 1.1, 
+                  whileHover={{
+                    scale: 1.1,
                     boxShadow: '0 0 20px rgba(0, 255, 255, 0.6)',
                     y: -2
                   }}
@@ -911,8 +914,8 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                   ⚡ WORK
                 </motion.button>
                 <motion.button
-                  whileHover={{ 
-                    scale: 1.1, 
+                  whileHover={{
+                    scale: 1.1,
                     boxShadow: '0 0 20px rgba(255, 0, 255, 0.6)',
                     y: -2
                   }}
@@ -943,14 +946,14 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
       </section>
 
       <section id="skills" ref={skillsRef} className="section" style={{ marginBottom: '4rem' }}>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{ 
-            textAlign: 'center', 
-            marginBottom: '3rem', 
-            fontSize: '2.5rem', 
+          style={{
+            textAlign: 'center',
+            marginBottom: '3rem',
+            fontSize: '2.5rem',
             color: 'var(--text-primary)',
             textShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
             background: 'linear-gradient(45deg, #00ffff, #ff00ff)',
@@ -960,7 +963,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
         >
           SKILLS
         </motion.h2>
-        <div className="skills-container">
+        <div className="skills-container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
           <div className="skills-category">
             <h3 className="category-title">Programming Languages</h3>
             <div className="skills-grid">
@@ -987,7 +990,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               ))}
             </div>
           </div>
-          
+
           <div className="skills-category">
             <h3 className="category-title">Tools & Frameworks</h3>
             <div className="skills-grid">
@@ -1018,14 +1021,14 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
       </section>
 
       <section id="projects" ref={projectsRef} className="section" style={{ marginBottom: '4rem' }}>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{ 
-            textAlign: 'center', 
-            marginBottom: '3rem', 
-            fontSize: '2.5rem', 
+          style={{
+            textAlign: 'center',
+            marginBottom: '3rem',
+            fontSize: '2.5rem',
             color: 'var(--text-primary)',
             textShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
             background: 'linear-gradient(45deg, #00ffff, #ff00ff)',
@@ -1035,12 +1038,12 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
         >
           PROJECTS
         </motion.h2>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', padding: '0 1rem' }}>
           {PROJECTS.map((project, index) => (
-            <ProjectCard 
-              key={index} 
-              project={project} 
-              index={index} 
+            <ProjectCard
+              key={index}
+              project={project}
+              index={index}
               isFlipped={flippedCard === index}
               onFlip={() => setFlippedCard(flippedCard === index ? null : index)}
             />
@@ -1050,14 +1053,14 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
 
       <section id="certifications" ref={certificationsRef} className="section" style={{ marginBottom: '4rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            style={{ 
-              textAlign: 'center', 
-              marginBottom: '3rem', 
-              fontSize: '2.5rem', 
+            style={{
+              textAlign: 'center',
+              marginBottom: '3rem',
+              fontSize: '2.5rem',
               color: 'var(--text-primary)',
               textShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
               background: 'linear-gradient(45deg, #00ffff, #ff00ff)',
@@ -1067,9 +1070,9 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
           >
             CERTIFICATIONS
           </motion.h2>
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
             gap: '2rem',
             maxWidth: '1200px',
             margin: '0 auto'
@@ -1082,26 +1085,26 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               { title: 'AWS Cloud Practitioner', org: 'Amazon Web Services', year: 'Coming Soon...', color: '#FF9500' },
               { title: 'Introduction to Generative AI ', org: 'Google Cloud', year: '2025', color: '#EA4335' },
               { title: 'Introduction to LLMs', org: 'Google Cloud', year: '2025', color: '#FBBC04' },
-              { title: 'HTML and CSS (Certiport)', org: 'Certiport', year: '2025', color: '#00CED1' },
-              { title: 'Javascript (Certiport)', org: 'Certiport', year: '2025', color: '#FFD700' },
-              { title: 'Python Basics (IBM)', org: 'IBM', year: '2025', color: '#00CED1' }
-              
+              { title: 'HTML and CSS', org: 'Certiport', year: '2025', color: '#00CED1' },
+              { title: 'Javascript', org: 'Certiport', year: '2025', color: '#FFD700' },
+              { title: 'Python', org: 'IBM', year: '2025', color: '#00CED1' }
+
             ].map((cert, index) => (
               <motion.div
                 key={cert.title}
                 initial={{ opacity: 0, y: 50, scale: 0.9 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.03,
                   y: -12,
-                  boxShadow: darkMode 
+                  boxShadow: darkMode
                     ? `0 20px 40px ${cert.color}30, 0 0 0 1px ${cert.color}40`
                     : `0 20px 40px ${cert.color}20, 0 0 0 1px ${cert.color}30`
                 }}
                 whileTap={{ scale: 0.97 }}
                 style={{
-                  background: darkMode 
+                  background: darkMode
                     ? `linear-gradient(145deg, rgba(15, 15, 25, 0.95), rgba(25, 25, 40, 0.9))`
                     : `linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(240, 240, 250, 0.9))`,
                   border: `1px solid ${cert.color}${darkMode ? '30' : '40'}`,
@@ -1111,7 +1114,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                   position: 'relative',
                   overflow: 'hidden',
                   backdropFilter: 'blur(20px)',
-                  boxShadow: darkMode 
+                  boxShadow: darkMode
                     ? `0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 8px ${cert.color}20`
                     : `0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px ${cert.color}15`
                 }}
@@ -1123,12 +1126,12 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  background: darkMode 
+                  background: darkMode
                     ? `linear-gradient(135deg, ${cert.color}08, transparent 50%, ${cert.color}05)`
                     : `linear-gradient(135deg, ${cert.color}05, transparent 50%, ${cert.color}03)`,
                   borderRadius: 'inherit'
                 }} />
-                
+
                 {/* Top accent */}
                 <div style={{
                   position: 'absolute',
@@ -1139,12 +1142,12 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                   background: `linear-gradient(90deg, ${cert.color}, ${cert.color}60, ${cert.color})`,
                   borderRadius: '20px 20px 0 0'
                 }} />
-                
 
-                
+
+
                 <div style={{ position: 'relative', zIndex: 2 }}>
                   {/* Icon placeholder */}
-                  <motion.div 
+                  <motion.div
                     style={{
                       width: '60px',
                       height: '60px',
@@ -1163,9 +1166,9 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                   >
                     ✓
                   </motion.div>
-                  
+
                   {/* Title */}
-                  <h4 style={{ 
+                  <h4 style={{
                     color: darkMode ? '#ffffff' : '#2d3748',
                     fontSize: '1.2rem',
                     fontWeight: '600',
@@ -1176,9 +1179,9 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                   }}>
                     {cert.title}
                   </h4>
-                  
+
                   {/* Organization */}
-                  <p style={{ 
+                  <p style={{
                     color: cert.color,
                     fontSize: '0.95rem',
                     marginBottom: '1.2rem',
@@ -1188,16 +1191,16 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                   }}>
                     {cert.org}
                   </p>
-                  
+
                   {/* Year badge */}
                   <div style={{
                     display: 'flex',
                     justifyContent: 'center',
                     marginBottom: '2rem'
                   }}>
-                    <motion.span 
+                    <motion.span
                       style={{
-                        background: darkMode 
+                        background: darkMode
                           ? `linear-gradient(135deg, ${cert.color}15, ${cert.color}25)`
                           : `linear-gradient(135deg, ${cert.color}20, ${cert.color}30)`,
                         color: darkMode ? '#ffffff' : '#ffffff',
@@ -1213,10 +1216,10 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                       {cert.year}
                     </motion.span>
                   </div>
-                  
+
                   {/* Premium button */}
-                  <motion.button 
-                    whileHover={{ 
+                  <motion.button
+                    whileHover={{
                       scale: 1.02,
                       boxShadow: `0 8px 25px ${cert.color}40`,
                       background: `linear-gradient(135deg, ${cert.color}, ${cert.color}CC)`
@@ -1235,7 +1238,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                       fontWeight: '600',
                       fontSize: '0.95rem',
                       transition: 'all 0.3s ease',
-                      boxShadow: darkMode 
+                      boxShadow: darkMode
                         ? `0 4px 15px ${cert.color}30`
                         : `0 4px 15px ${cert.color}25`
                     }}
@@ -1250,14 +1253,14 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
       </section>
 
       <section id="experience" className="section" style={{ marginBottom: '4rem' }}>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{ 
-            textAlign: 'center', 
-            marginBottom: '3rem', 
-            fontSize: '2.5rem', 
+          style={{
+            textAlign: 'center',
+            marginBottom: '3rem',
+            fontSize: '2.5rem',
             color: 'var(--text-primary)',
             textShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
             background: 'linear-gradient(45deg, #00ffff, #ff00ff)',
@@ -1277,7 +1280,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                 company: 'Parul University',
                 period: '2024 - 2028',
                 description: 'Pursuing Computer Science with focus on AI/ML, software development, and cloud technologies.',
-                skills: ['Data Structures', 'Algorithms', 'Database Systems', 'Software Engineering','OOPJ']
+                skills: ['Data Structures', 'Algorithms', 'Database Systems', 'Software Engineering', 'OOPJ']
               },
               {
                 title: 'Higher Secondary Education',
@@ -1343,11 +1346,11 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               {
                 title: 'AWS Student Community Day Volunteer',
                 company: 'AWS Student Community',
-                period: 'Dec 2024',
+                period: 'Dec 2025',
                 description: 'Assisted in organizing and managing logistics for AWS Student Community Day event in Parul University.',
                 skills: ['Event Management', 'Team Coordination', 'Public Speaking', 'Leadership']
               },
-            
+
             ].map((vol, index) => (
               <motion.div
                 key={index}
@@ -1440,16 +1443,16 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
       </section>
 
       <section id="contact" ref={contactRef} className="section" style={{ marginBottom: '4rem', position: 'relative', overflow: 'hidden' }}>
-        
-        <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem', position: 'relative', zIndex: 1 }}>
-          <motion.h2 
+
+        <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <motion.h2
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            style={{ 
-              textAlign: 'center', 
-              marginBottom: '3rem', 
-              fontSize: '2.5rem', 
+            style={{
+              textAlign: 'center',
+              marginBottom: '3rem',
+              fontSize: '2.5rem',
               color: 'var(--text-primary)',
               textShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
               background: 'linear-gradient(45deg, #00ffff, #ff00ff)',
@@ -1459,21 +1462,22 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
           >
             GET IN TOUCH
           </motion.h2>
-          
+
           {/* Contact Info */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            style={{ 
-              display: 'flex', 
-              justifyContent: 'center', 
-              gap: '3rem', 
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '2rem',
               marginBottom: '3rem',
-              flexWrap: 'wrap'
+              width: '100%',
+              maxWidth: '600px'
             }}
           >
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               style={{
                 display: 'flex',
@@ -1484,7 +1488,9 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                 border: '2px solid rgba(0, 255, 255, 0.3)',
                 borderRadius: '16px',
                 backdropFilter: 'blur(10px)',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                minWidth: '280px',
+                height: '80px'
               }}
               onClick={() => window.open('mailto:shankarsoni7172@gmail.com')}
             >
@@ -1500,8 +1506,8 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                 <div style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1rem' }}>shankarsoni7172@gmail.com</div>
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               style={{
                 display: 'flex',
@@ -1512,7 +1518,9 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                 border: '2px solid rgba(255, 0, 255, 0.3)',
                 borderRadius: '16px',
                 backdropFilter: 'blur(10px)',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                minWidth: '280px',
+                height: '80px'
               }}
               onClick={() => window.open('tel:+919571729060')}
             >
@@ -1529,15 +1537,15 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               </div>
             </motion.div>
           </motion.div>
-          
+
           {/* Contact Form */}
-          <motion.div 
-            className="card" 
+          <motion.div
+            className="card"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            whileHover={{ 
-              scale: 1.02, 
+            whileHover={{
+              scale: 1.02,
               boxShadow: '0 25px 50px rgba(0, 255, 255, 0.3), inset 0 0 30px rgba(255, 0, 255, 0.1)'
             }}
             style={{
@@ -1564,16 +1572,16 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
             />
-            
-            <div style={{ padding: '3rem', position: 'relative', zIndex: 1 }}>
-              <motion.h3 
+
+            <div style={{ padding: 'min(3rem, 5vw)', position: 'relative', zIndex: 1 }}>
+              <motion.h3
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
                 className="contact-form-heading"
-                style={{ 
-                  color: '#00ffff', 
-                  marginBottom: '2rem', 
+                style={{
+                  color: '#00ffff',
+                  marginBottom: '2rem',
                   textAlign: 'center',
                   fontSize: '1.5rem',
                   textShadow: '0 0 10px rgba(0, 255, 255, 0.5)',
@@ -1582,45 +1590,47 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               >
                 <span className="cloud-emoji">💬 </span>SEND MESSAGE
               </motion.h3>
-              
-              <form 
+
+              <form
                 onSubmit={async (event) => {
                   event.preventDefault();
                   const formData = new FormData(event.target);
                   formData.append("access_key", "4d228710-ddc2-4950-9e39-3de26cc681b4");
-                  
+
                   const response = await fetch("https://api.web3forms.com/submit", {
                     method: "POST",
                     body: formData
                   });
-                  
+
                   const data = await response.json();
                   setFormResult(data.success ? "Message sent successfully! 🎉" : "Error sending message. Please try again.");
-                  
+
                   if (data.success) {
                     event.target.reset();
                   }
                 }}
                 style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
               >
-                <motion.input 
+                <motion.input
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.7 }}
-                  type="text" 
+                  type="text"
                   name="name"
                   placeholder="🧑 Your Name"
-                  required 
+                  required
                   style={{
-                    padding: '1.2rem',
+                    padding: 'min(1.2rem, 4vw)',
                     background: 'rgba(0, 0, 0, 0.6)',
                     border: '2px solid rgba(0, 255, 255, 0.3)',
                     borderRadius: '12px',
                     color: '#ffffff',
                     fontFamily: 'Share Tech Mono, monospace',
-                    fontSize: '1rem',
+                    fontSize: 'min(1rem, 4vw)',
                     transition: 'all 0.3s ease',
-                    backdropFilter: 'blur(10px)'
+                    backdropFilter: 'blur(10px)',
+                    width: '100%',
+                    boxSizing: 'border-box'
                   }}
                   onFocus={(e) => {
                     e.target.style.borderColor = 'rgba(0, 255, 255, 0.8)';
@@ -1631,25 +1641,27 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                     e.target.style.boxShadow = 'none';
                   }}
                 />
-                
-                <motion.input 
+
+                <motion.input
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.8 }}
-                  type="email" 
+                  type="email"
                   name="email"
                   placeholder="📧 Your Email"
-                  required 
+                  required
                   style={{
-                    padding: '1.2rem',
+                    padding: 'min(1.2rem, 4vw)',
                     background: 'rgba(0, 0, 0, 0.6)',
                     border: '2px solid rgba(255, 0, 255, 0.3)',
                     borderRadius: '12px',
                     color: '#ffffff',
                     fontFamily: 'Share Tech Mono, monospace',
-                    fontSize: '1rem',
+                    fontSize: 'min(1rem, 4vw)',
                     transition: 'all 0.3s ease',
-                    backdropFilter: 'blur(10px)'
+                    backdropFilter: 'blur(10px)',
+                    width: '100%',
+                    boxSizing: 'border-box'
                   }}
                   onFocus={(e) => {
                     e.target.style.borderColor = 'rgba(255, 0, 255, 0.8)';
@@ -1660,27 +1672,29 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                     e.target.style.boxShadow = 'none';
                   }}
                 />
-                
-                <motion.textarea 
+
+                <motion.textarea
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.9 }}
                   name="message"
-                  placeholder="💭 Your Message" 
+                  placeholder="💭 Your Message"
                   rows="6"
                   required
                   style={{
-                    padding: '1.2rem',
+                    padding: 'min(1.2rem, 4vw)',
                     background: 'rgba(0, 0, 0, 0.6)',
                     border: '2px solid rgba(255, 255, 0, 0.3)',
                     borderRadius: '12px',
                     color: '#ffffff',
                     fontFamily: 'Share Tech Mono, monospace',
-                    fontSize: '1rem',
+                    fontSize: 'min(1rem, 4vw)',
                     resize: 'vertical',
                     minHeight: '120px',
                     transition: 'all 0.3s ease',
-                    backdropFilter: 'blur(10px)'
+                    backdropFilter: 'blur(10px)',
+                    width: '100%',
+                    boxSizing: 'border-box'
                   }}
                   onFocus={(e) => {
                     e.target.style.borderColor = 'rgba(255, 255, 0, 0.8)';
@@ -1691,12 +1705,12 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                     e.target.style.boxShadow = 'none';
                   }}
                 />
-                
-                <motion.button 
+
+                <motion.button
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1 }}
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.05,
                     boxShadow: '0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(255, 0, 255, 0.4)'
                   }}
@@ -1719,7 +1733,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                 >
                   📤 SEND
                 </motion.button>
-                
+
                 {formResult && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -1728,8 +1742,8 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                       textAlign: 'center',
                       padding: '1rem',
                       borderRadius: '8px',
-                      background: formResult.includes('successfully') 
-                        ? 'rgba(0, 255, 0, 0.1)' 
+                      background: formResult.includes('successfully')
+                        ? 'rgba(0, 255, 0, 0.1)'
                         : 'rgba(255, 0, 0, 0.1)',
                       border: `1px solid ${formResult.includes('successfully') ? 'rgba(0, 255, 0, 0.3)' : 'rgba(255, 0, 0, 0.3)'}`,
                       color: formResult.includes('successfully') ? '#00ff00' : '#ff4444',
@@ -1742,37 +1756,37 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               </form>
             </div>
           </motion.div>
-          
+
           {/* Social Media Links */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            style={{ 
-              display: 'flex', 
-              justifyContent: 'center', 
-              gap: '2rem', 
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: '2rem',
               marginTop: '3rem',
               flexWrap: 'wrap'
             }}
           >
-            <motion.div 
-              whileHover={{ 
-                scale: 1.2, 
+            <motion.div
+              whileHover={{
+                scale: 1.2,
                 y: -10,
                 boxShadow: '0 0 30px rgba(0, 123, 181, 0.6)'
               }}
-              animate={{ 
+              animate={{
                 rotate: [0, 2, -2, 0]
               }}
-              transition={{ 
-                duration: 6, 
+              transition={{
+                duration: 6,
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
               whileTap={{ scale: 0.9 }}
               onClick={() => window.open('https://linkedin.com/in/shankar-soni-82b246337/', '_blank')}
-              style={{ 
+              style={{
                 cursor: 'pointer',
                 padding: '1rem',
                 background: 'linear-gradient(135deg, rgba(0, 123, 181, 0.2), rgba(0, 123, 181, 0.1))',
@@ -1783,28 +1797,28 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               }}
             >
               <svg width="48" height="48" viewBox="0 0 24 24" fill="#0077b5">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
             </motion.div>
-            
-            <motion.div 
-              whileHover={{ 
-                scale: 1.2, 
+
+            <motion.div
+              whileHover={{
+                scale: 1.2,
                 y: -10,
                 boxShadow: '0 0 30px rgba(255, 255, 255, 0.6)'
               }}
-              animate={{ 
+              animate={{
                 y: [0, -4, 0]
               }}
-              transition={{ 
-                duration: 4, 
+              transition={{
+                duration: 4,
                 repeat: Infinity,
                 ease: "easeInOut",
                 delay: 0.5
               }}
               whileTap={{ scale: 0.9 }}
               onClick={() => window.open('https://github.com/Shankar-soni-2006', '_blank')}
-              style={{ 
+              style={{
                 cursor: 'pointer',
                 padding: '1rem',
                 background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))',
@@ -1815,28 +1829,28 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               }}
             >
               <svg width="48" height="48" viewBox="0 0 24 24" fill={darkMode ? "#ffffff" : "#24292e"}>
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
               </svg>
             </motion.div>
-            
-            <motion.div 
-              whileHover={{ 
-                scale: 1.2, 
+
+            <motion.div
+              whileHover={{
+                scale: 1.2,
                 y: -10,
                 boxShadow: '0 0 30px rgba(225, 48, 108, 0.6)'
               }}
-              animate={{ 
+              animate={{
                 x: [0, 4, -4, 0]
               }}
-              transition={{ 
-                duration: 6, 
+              transition={{
+                duration: 6,
                 repeat: Infinity,
                 ease: "easeInOut",
                 delay: 1
               }}
               whileTap={{ scale: 0.9 }}
               onClick={() => window.open('https://instagram.com/dev.shankar2006', '_blank')}
-              style={{ 
+              style={{
                 cursor: 'pointer',
                 padding: '1rem',
                 background: 'linear-gradient(135deg, rgba(225, 48, 108, 0.2), rgba(225, 48, 108, 0.1))',
@@ -1856,10 +1870,10 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
                     <stop offset="90%" stopColor="#285AEB" />
                   </radialGradient>
                 </defs>
-                <path fill="url(#instagramGradient)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                <path fill="url(#instagramGradient)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
               </svg>
             </motion.div>
-            
+
 
           </motion.div>
         </div>
@@ -2055,15 +2069,15 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
           </motion.div>
         </motion.div>
       )}
-      
+
       {/* Footer */}
       <footer style={{
         marginTop: '4rem',
         padding: '2rem 2rem',
-        background: darkMode 
+        background: darkMode
           ? 'linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(20, 20, 40, 0.95))'
           : 'linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 240, 250, 0.9))',
-        borderTop: darkMode 
+        borderTop: darkMode
           ? '2px solid rgba(0, 255, 255, 0.3)'
           : '2px solid rgba(74, 144, 226, 0.3)',
         backdropFilter: 'blur(15px)',
@@ -2116,7 +2130,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
               "Code is like humor. When you have to explain it, it's bad."
             </motion.p>
           </motion.div>
-          
+
           <motion.h3
             style={{
               fontSize: '1.8rem',
@@ -2138,7 +2152,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
           >
             Let's Build Something Amazing Together!
           </motion.h3>
-          
+
           <p style={{
             color: darkMode ? 'rgba(255, 255, 255, 0.8)' : 'rgba(45, 55, 72, 0.7)',
             fontSize: '1.1rem',
@@ -2148,7 +2162,7 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
           }}>
             Ready to turn your ideas into reality? I'm always excited to collaborate on innovative projects and bring creative visions to life.
           </p>
-          
+
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -2170,11 +2184,11 @@ Computer Science student passionate about AI/ML and full-stack development. Buil
           >
             🚀 Start a Project With Me
           </motion.div>
-          
+
           <div style={{
             marginTop: '2rem',
             paddingTop: '1.5rem',
-            borderTop: darkMode 
+            borderTop: darkMode
               ? '1px solid rgba(255, 255, 255, 0.1)'
               : '1px solid rgba(45, 55, 72, 0.2)',
             color: darkMode ? 'rgba(255, 255, 255, 0.6)' : 'rgba(45, 55, 72, 0.5)',
