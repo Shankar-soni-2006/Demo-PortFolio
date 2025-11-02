@@ -40,7 +40,7 @@ const CERT_IMAGES = {
   'Introduction to Generative AI ': '/assets/certificates/GGen.png',
   'Introduction to LLMs': '/assets/certificates/LLM.png',
   'Vadodara Hackathon 6.0': '/assets/certificates/VH6.0.png',
-  'HTML and CSS': '/assets/certificates/HTML-and-CSS.jpg',
+  'HTML and CSS': '/assets/certificates/HTml-and-CSS.jpg',
   'Javascript': '/assets/certificates/js.jpg',
   'Python': '/assets/certificates/Python-Basics.png'
 };
