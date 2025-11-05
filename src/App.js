@@ -89,7 +89,7 @@ const PROJECTS = [
     description: 'Full-featured online shopping platform',
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe API'],
     features: ['Product catalog', 'Payment integration', 'Order management'],
-    status: 'Featured',
+    status: 'Futured',
     github: 'https://github.com/Shankar-soni-2006',
     demo: 'https://demo.com'
   },
@@ -98,7 +98,7 @@ const PROJECTS = [
     description: 'Python-based ML model for data prediction',
     technologies: ['Python', 'TensorFlow', 'Pandas', 'NumPy'],
     features: ['Data preprocessing', 'Model training', 'Prediction analytics'],
-    status: 'Featured',
+    status: 'Futured',
     github: 'https://github.com/Shankar-soni-2006',
     demo: 'https://demo.com'
   },
@@ -107,7 +107,7 @@ const PROJECTS = [
     description: 'Secure file storage solution with AWS integration',
     technologies: ['React', 'AWS S3', 'Node.js', 'JWT'],
     features: ['File upload/download', 'User authentication', 'Cloud synchronization'],
-    status: 'Featured',
+    status: 'Futured',
     github: 'https://github.com/Shankar-soni-2006',
     demo: 'https://demo.com'
   }
